@@ -1,0 +1,9 @@
+# Protects sensitive API keys and environment variables
+.env
+
+# Python auto-generated compiled files, not source code
+__pycache__/
+*.pyc
+
+# Jupyter auto-save backups, not intentional code changes
+.ipynb_checkpoints/
