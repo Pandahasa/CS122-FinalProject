@@ -4,8 +4,8 @@
 The Loop
 
 ## Authors
-- Sankalp Aswani
-- [Partner's Name]
+- Sankalp Aswani - Data Visualization/Analysis
+- Prateek Panda - Data Collection
 
 ## Project Description
 The Loop is a Python-based application that gathers essential golf course 
