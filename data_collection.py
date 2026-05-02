@@ -314,6 +314,8 @@ def parse_tee_box_data(course_json: Any) -> List[Dict[str, Any]]:
     for tee_box in _extract_tee_boxes(course_root):
         tee_name = _pick_first(tee_box, ("teeName", "tee_name", "name", "tee", "teeGroup"), "Unknown Tee")
         tee_color = _pick_first(tee_box, ("color", "teeColor"), "")
+        if tee_color in (None, ""):
+            tee_color = tee_name
         tee_course_rating = _pick_first(tee_box, ("courseRating", "course_rating", "rating"), "")
         tee_slope_rating = _pick_first(tee_box, ("slopeRating", "slope_rating", "slope"), "")
 
