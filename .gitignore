@@ -6,4 +6,6 @@ __pycache__/
 *.pyc
 
 # Jupyter auto-save backups, not intentional code changes
-.ipynb_checkpoints/
+.ipynb_checkpoints/.DS_Store
+static/*.png
+analysis.ipynb

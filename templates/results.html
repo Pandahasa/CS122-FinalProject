@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Loop - Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h3 class="mb-3">{{ course_name }}</h3>
+
+    <hr>
+    <h5>Tee Box Recommender</h5>
+    <p class="text-muted">Enter your handicap to get a personalized tee box recommendation.</p>
+    <form action="/tee_rec_result" method="post">
+        <input type="hidden" name="course_dir" value="{{ course_dir }}">
+        <div class="mb-2">
+            <label class="form-label">Your handicap:</label>
+            <input type="text" name="Handicap" class="form-control w-25">
+        </div>
+        <input type="submit" value="Recommend" class="btn btn-success">
+    </form>
+
+    <img src="{{ url_for('static', filename=chart) }}" class="img-fluid mb-4">
+</div>
+</body>
+</html>
